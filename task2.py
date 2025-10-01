@@ -56,7 +56,7 @@ def is_inside(w, h, x, y):
     return y <= (h / w) * x
 
 # Генерація випадкових точок
-points = [(random.uniform(0, w), random.uniform(0, h)) for _ in range(15000)]
+points = [(random.uniform(0, w), random.uniform(0, h)) for _ in range(1500)]
 
 # Відбір точок, що знаходяться всередині трикутника
 inside_points = [point for point in points if is_inside(w, h, point[0], point[1])]
